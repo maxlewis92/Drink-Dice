@@ -1,0 +1,87 @@
+/* Color Palette website: https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
+html,body {
+    vertical-align: middle;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background-4.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:contents;
+}
+
+/* Logo, animated */
+svg{font-weight:bold;max-width:600px;height:100%;}
+
+.logo {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 7vw;
+    font-weight: 400;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    color: #2A9D8F;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 6.5vw;
+    font-weight: 500;
+    display: inline;
+    margin: 0 auto;
+    width: 100%;
+    color: #E76F51;
+    text-shadow: 2px 2px 3px #000000;
+}
+h2 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+    display: inline;
+    margin: 0 auto;
+    width: 100%;
+    color: #2A9D8F;
+    text-shadow: 2px 2px 3px #000000;
+}
+h3,a {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    display: inline;
+    margin: 0 auto;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px #000000;
+}
+.animatelink > h3 > a {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+    text-decoration: none;
+}
+.animatelink > h3 > a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 -1 20 5'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23E76F51' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+.center {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.recipe {
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: #E9C46A;
+}

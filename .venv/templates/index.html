@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drink Dice!</title>
+    <!-- Google Font Service -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class = "center">
+        <div class="logo">
+        <svg viewbox="0 0 100 20">
+            <defs>
+              <linearGradient id="gradient">
+                <stop color="#f00"/>
+              </linearGradient>
+              <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="#E76F51"> 
+                  <animateTransform
+                      attributeName="transform"
+                      begin="0s"
+                      dur="1.5s"
+                      type="translate"
+                      from="0,0"
+                      to="40,0"
+                      repeatCount="indefinite" />
+                </path>
+              </pattern>
+            </defs>
+            <text text-anchor="middle" x="50" y="15" font-size="17" fill="#E9C46A" fill-opacity="1">Drink Dice!</text>
+            <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">Drink Dice!</text>
+          </svg>
+        </div>
+
+<h2>Try making a</h2>
+<br>
+<h1>{{ result["spirit"] }} {{ result["template"] }}</h1><h2> with </h2><h1>{{ result["variation"] }}</h1>
+<br>
+<h3 class = "recipe">{{ result["recipe"]|safe }}</h3>
+<br>
+<br>
+<div class="animatelink"><h3><a href="{{ url_for('index') }}">Roll Again!</a></h3></div>
+</div>
+</body>
+</html>
